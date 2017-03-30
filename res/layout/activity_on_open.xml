@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.stanford.cs108.touchsymphony.OnOpen">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TouchSymphony"
+        android:layout_gravity="center"
+        android:textSize="50dp"
+        android:textColor="@android:color/white"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compose"
+        android:onClick="toCompose"
+        android:drawableTop= "@drawable/compose"
+        android:background="@android:color/background_dark"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_gravity="center"
+        android:onClick="toSongsMain"
+        android:drawableTop="@drawable/play"
+        android:background="@android:color/background_dark"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/request_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Please turn your device horizontally"
+        />
+
+</LinearLayout>

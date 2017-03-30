@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TouchSymphony</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string-array name="insturments_array">
+        <item>Piano</item>
+        <item>Drum</item>
+        <item>Electric Guitar</item>
+        <item>Bass</item>
+    </string-array>
+    <string name = "request_text">Please turn your device horizontally</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.stanford.cs108.touchsymphony.ComposeActivity"
+
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:id="@+id/mainlayout"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to TouchSymphony! Press anywhere to begin."
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/openText"
+        />
+
+    <edu.stanford.cs108.touchsymphony.touchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/touchview"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toggleRecording"
+            android:drawableTop="@drawable/recordimage"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:text="Record"
+            android:layout_weight="1"
+            android:id="@+id/record_button"
+
+            />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            android:layout_weight="1"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:id="@+id/instruments_spinner"
+
+            >
+
+        </Spinner>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
